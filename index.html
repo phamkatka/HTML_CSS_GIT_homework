@@ -3,14 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Test log: moje cesta do QA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Welcome to My Simple Page</h1>
+    <!-- Hlavička stránky -->
+     <header class="hlavicka" id="hlavicka">
+    <h1>Test log: moje cesta do QA</h1>
+</header>
 
-    <p>This is a paragraph of text. The colors and font of this text are being controlled by the linked external CSS file, 'styles.css'.</p>
+<!-- Úvodní slovo -->
+    <p>O změně kariéry jsem uvažovala dlouho. Ne, že by mne dosavadní práce nebavila, ale už jsem se příliš nikam neposouvala a představa, že budu to samé dělat další dva tři roky, nebyla úplně lákavá. Líbila se mi představa začít úplně v novém oboru.</p>
+
+    <ul class="menu" id="menu">
+        <li><a href="#Czechitas">Czechitas</a></li>
+        <li><a href="#DA">Digitální akademie</a></li>
+        <ul>
+        <li><a href="#ObsahAkademie">Obsah akademie</a></li>
+        </ul>
+    </ul>
+
+    <!-- Sekce o Czechitas -->
+     <section class="Czechitas" id="Czechitas">
+        <h2>Czechitas</h2>
+        <p>Czechitas jsem znala již z dřívějška. Dostala jsem na organizaci doporučení od dvou bývalých absolventek, které pak hravě našly uplatnění. Bylo mi také hodně sympatické, že se jedná o neziskovku. Volba tudíž jednoduchá, stejně tak jako výběr zaměření akademie. Když se to tak vezme, nemůže být testování v principu zas až tak vzdálené korekturám a připomínkování textů….Tímto směrem se ubíraly moje myšlenky &#128578. Střelba trochu naslepo, ale kupodivu do černého, jelikož mne testování <strong>vážně dost baví</strong>. Těžko uvěřit, že se akademie pomalu chýlí ke konci. (Tak nějak začínám tušit, že to nejtěžší mne teprve čeká - a to najít si své místo na pracovním trhu).</p>
+     </section>
+
+     <!-- Sekce o DA -->
+     <section class="DA" id="DA">
+        <h2>Digitální akademie testování</h2>
+        <p>Akademie je velmi zajímavě koncipovaná. Stojí na třech hlavních pilířích:</p>
+        <ol>
+            <li>Samostudiu, které probíhá na platformě moodle.</li>
+            <li>Cvičeních navazujících na samostudium - buď formou online lekcí, nebo prezenčně co by víkendové bootcampy.</li>
+            <li>Praxi spočívající v kontinuálním testování webové aplikace. Studentky jsou rozděleny do 4-5 členných týmů, které ve 4 sprintech testují za tímto účelem připravenou Czechitas aplikaci. Mají tak příležitost postupně zužitkovat nabyté vědomosti. První sprint byl tak zaměřený na základní práci s JIRA a psaním TC v Zephyru, ve druhém sprintu jsme začaly využívat DevTools, třetí sprint proběhl ve znamení API a v závěrečném jsme si vyzkoušely low-code testování. Týmový projekt tak co nejvěrnějším způsobem zprostředkovává zkušenost z reálné práce testera v agilním vývoji. Každý tým má svého scrum mastera, dělá refinement, připravuje demo a za uplynulým sprintem se ohlíží na retrospektivě.</li>
+        </ol>
+
+        <p>Praktická část akademie vrcholí hackathonem. Teoretické znalosti a schopnost analýzy jsou pak ověřeny v odborné debatě.</p>
+    </section>
+
+    <!-- Obsah akademie-->
+     <section class="ObsahAkademie" id="ObsahAkademie">
+        <h3>Obsah akademie</h3>
+        <ol>
+            <li><span class="ObsahTucny">Základy testování</span>
+                <ul>
+                    <li>testování v agilním vývoji</li>
+                    <li>testovací techniky</li>
+                    <li>test analýza a tvorba testů</li>
+                    <li>testovací strategie</li>
+                </ul>
+            </li>
+            <li><span class="ObsahTucny">Testování v praxi</span>
+                <ul>
+                    <li>Ticketovací nástroje: JIRA, Zephyr</li>
+                    <li>Exploratorní testování</li>
+                    <li>Testovací principy v různých systémech</li>
+                </ul>
+            </li>
+            <li><span class="ObsahTucny">Hard skills</span>
+                <ul>
+                    <li>Základy webových prohlížečů - HTML, CSS, DevTools</li>
+                    <li>Testování na API vrstvě - Postman</li>
+                    <li>Základy databází - DBeaver</li>
+                    <li>Verzovací systémy a verzování kódu - git a GitHub</li>
+                </ul>
+            </li>              
+            <li><span class="ObsahTucny">Automatizace: low-code automation - IntelliJ IDEA</span></li>
+        </ol>
+     </section>
+
+ <!--Patička stránky -->    
+ <footer class="paticka" id="paticka">
+    <p>© 2025, Kateřina Phamová</p>
+ </footer>
 
 </body>
 </html>
